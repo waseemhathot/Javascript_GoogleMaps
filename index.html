@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Google Maps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <header class="header header--color">
+        <h1>Google Maps</h1>
+    </header>
+
+    <div class="main-content main-content--color">
+        <div class="main-content__user-input">
+            <label for="address-id">Navigate to: </label>
+            <input type="text" id="address-id" class="user-input__input">
+            <button type="button" class="button input-button">Search</button>
+        </div>
+        <div class="map"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAryRq15wTP98Dft4BNRcBAWkal1Vy2BMg&callback=initMap" async
+        defer></script>
+
+</body>
+
+</html>
