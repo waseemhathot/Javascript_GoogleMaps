@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script data-require="moment.js@2.14.1" data-semver="2.14.1" src="https://npmcdn.com/moment@2.14.1"></script>
 </head>
 
 <body>
-    
     <header class="header header--color">
         <h1>Google Maps</h1>
     </header>
@@ -19,7 +19,7 @@
     <div class="main-content main-content--color">
         <div class="main-content__user-input">
             <label for="address-id">Navigate to: </label>
-            <input type="text" id="address-id" class="user-input__input">
+            <input type="text" id="address-id" class="user-input__input" autocomplete="on">
             <button type="button" class="button input-button">Search</button>
         </div>
         <div class="map"></div>
